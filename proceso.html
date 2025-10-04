@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso - Ecoskim</title>
+    <!-- Iconos y Fuentes Mejoradas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/proceso.css">
+    <link rel="stylesheet" href="style/header.css">
+</head>
+<!-- header -->
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo" aria-label="Ecoskim - Inicio">
+                <span class="logo-wrap" aria-hidden="true">
+                    <img src="img/Ecoskim.png" alt="Ecoskim" class="logo-img">
+                </span>
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="proceso.html">Proceso</a>
+                <a href="beneficios.html">Beneficios</a>
+                <a href="contactos.html">Contacto</a>
+            </nav>
+            <div class="header-icons" id="header-icons">
+                <a href="#" aria-label="Buscar"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Carrito de compras"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir/Cerrar menú">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Fin del header -->
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>Nuestro Proceso Artesanal</h1>
+            </div>
+        </section>
+        <!-- Proceso -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">El Arte de Elaborar Jabones</h2>
+                <p class="section-subtitle">Cada barra de jabón es el resultado de un proceso cuidadoso y meticuloso, donde la tradición se encuentra con la innovación para crear productos únicos y naturales.</p>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <img src="https://images.pexels.com/photos/8450240/pexels-photo-8450240.jpeg" alt="Selección de ingredientes" class="process-image">
+                        <div class="process-step-content">
+                           <h3>Selección de Ingredientes</h3>
+                           <p>Elegimos aceites puros, mantecas nutritivas y botánicos orgánicos, asegurando la más alta calidad y respeto por el origen de cada componente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <img src="https://www.youwish.nl/wp-content/uploads/2021/07/cold-process-2.jpg" alt="Saponificación en frío" class="process-image">
+                        <div class="process-step-content">
+                           <h3>Saponificación en Frío</h3>
+                           <p>Mezclamos los ingredientes con precisión, utilizando el método en frío que preserva las propiedades beneficiosas de los aceites y extractos naturales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <img src="https://v.etsystatic.com/video/upload/q_auto/20210305_202404_Trimmed_fzzfgq.jpg" alt="Elaboración artesanal" class="process-image">
+                        <div class="process-step-content">
+                            <h3>Corte y Moldeado Manual</h3>
+                            <p>Cada barra es vertida, moldeada y cortada a mano. Este toque artesanal le confiere a cada jabón un carácter único e irrepetible.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <img src="https://i.etsystatic.com/23309663/r/il/9368ff/3647056954/il_fullxfull.3647056954_b9jd.jpg" alt="Curado y almacenamiento" class="process-image">
+                        <div class="process-step-content">
+                            <h3>Curado Paciente</h3>
+                            <p>Los jabones reposan de 4 a 6 semanas en un ambiente controlado. Este curado lento es esencial para un jabón suave, duradero y de máxima calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-values-section">
+            <div class="process-values-content container">
+                <h2>El Arte de la Paciencia</h2>
+                <p>Nuestro proceso respeta los tiempos de la naturaleza. Desde la selección de ingredientes hasta el curado final, cada paso está diseñado para preservar las propiedades naturales y crear un producto que no solo limpia, sino que también nutre y protege tu piel.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal o ventana de Búsqueda -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSearch">&times;</span>
+            <h2><i class="fas fa-search"></i> Buscar Productos</h2>
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar jabones..." required>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+            <div class="search-results" id="searchResults">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <h3>Total: S/. <span id="totalAmount">0.00</span></h3>
+                <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre Ecoskim</h3>
+                    <p>Somos artesanos apasionados por crear jabones naturales que cuidan tu piel y el planeta. Cada producto es una promesa de pureza y calidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="proceso.html">Proceso</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Av. Famesa, Puente Piedra<br>Lima, Perú</p>
+                    <p>Email: <a href="mailto:Ecoskim@gmail.com">Ecoskim@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+51914573660">+51 914 573 660</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ecoskim. Todos los derechos reservados.</p>
+            <p>Diseñado por Adriana Jaramillo Bravo</p>
+        </div>
+    </footer>
+
+    <script src="js/proceso.js"></script>
+</body>
+</html>

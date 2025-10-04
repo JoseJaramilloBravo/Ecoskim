@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Ecoskim</title>
+    <!-- Iconos y Fuentes Mejoradas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/nosotros.css">
+    <link rel="stylesheet" href="style/header.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo" aria-label="Ecoskim - Inicio">
+                <span class="logo-wrap" aria-hidden="true">
+                    <img src="img/Ecoskim.png" alt="Ecoskim" class="logo-img">
+                </span>
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="proceso.html">Proceso</a>
+                <a href="beneficios.html">Beneficios</a>
+                <a href="contactos.html">Contacto</a>
+            </nav>
+            <div class="header-icons" id="header-icons">
+                <a href="#" aria-label="Buscar"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Carrito de compras"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <!-- Botón de menú móvil -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir/Cerrar menú">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- FIN DE LA MODIFICACIÓN -->
+        </div>
+    </header>
+    <!-- Fin del header -->
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>Nuestra Historia</h1>
+            </div>
+        </section>
+        <!-- Historia -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Pasión por lo Natural</h2>
+                <p class="section-subtitle">Nacimos de un deseo simple: volver a lo básico y crear productos honestos para el cuidado de la piel. Ecoskim es más que una marca; es un estilo de vida que celebra la pureza, la artesanía y el profundo respeto por nuestro planeta.</p>
+                
+                <div class="mission-grid">
+                    <div class="mission-content">
+                        <h3>Nuestra Filosofía</h3>
+                        <p>Creemos que la naturaleza nos provee de todo lo necesario para cuidar nuestro cuerpo. Por eso, seleccionamos a mano cada ingrediente, desde aceites botánicos hasta arcillas purificantes, asegurando que cada producto sea tan bueno para tu piel como para el medio ambiente.</p>
+                        <p>Rechazamos los químicos agresivos, los conservantes artificiales y las pruebas en animales. Nuestra misión es ofrecerte una alternativa saludable y sostenible que te haga sentir bien por dentro y por fuera.</p>
+                        <a href="proceso.html" class="cta-button">Conoce el Proceso</a>
+                    </div>
+                    <div class="mission-image">
+                        <img src="https://images.pexels.com/photos/7500300/pexels-photo-7500300.jpeg" alt="Mano sosteniendo dos barras de jabón artesanal">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Valores -->
+        <section class="values-section">
+            <div class="values-content container">
+                <h2>Nuestros Valores Fundamentales</h2>
+                <p>La transparencia, la sostenibilidad y la calidad artesanal son los pilares sobre los que construimos Ecoskim. Cada decisión que tomamos está guiada por nuestro compromiso de crear un impacto positivo, desde la obtención de ingredientes de comercio justo hasta nuestros empaques 100% reciclables.</p>
+            </div>
+        </section>
+        <!-- Compromiso -->
+        <section class="section commitment-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Compromiso</h2>
+                <p class="section-subtitle">Creemos en la belleza que es amable con tu piel y con nuestro planeta. Esa es la promesa de Ecoskim.</p>
+                <div class="commitment-grid">
+                    <div class="commitment-card">
+                        <div class="commitment-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>100% Natural</h3>
+                        <p>Usamos solo ingredientes puros y orgánicos. Sin parabenos, sulfatos ni químicos dañinos. Tu piel sentirá la diferencia.</p>
+                    </div>
+                    <div class="commitment-card">
+                        <div class="commitment-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Hecho a Mano</h3>
+                        <p>Cada barra de jabón es elaborada, cortada y empacada a mano. Un proceso lleno de dedicación y cuidado artesanal.</p>
+                    </div>
+                    <div class="commitment-card">
+                        <div class="commitment-icon"><i class="fas fa-globe-americas"></i></div>
+                        <h3>Eco-Amigable</h3>
+                        <p>Desde nuestros ingredientes sostenibles hasta nuestros empaques reciclables, cada decisión está pensada para proteger el planeta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal de Búsqueda -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSearch">&times;</span>
+            <h2><i class="fas fa-search"></i> Buscar Productos</h2>
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar jabones..." required>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+            <div class="search-results" id="searchResults">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <h3>Total: S/. <span id="totalAmount">0.00</span></h3>
+                <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre Ecoskim</h3>
+                    <p>Somos artesanos apasionados por crear jabones naturales que cuidan tu piel y el planeta. Cada producto es una promesa de pureza y calidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="proceso.html">Proceso</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Av. Famesa, Puente Piedra<br>Lima, Perú</p>
+                    <p>Email: <a href="mailto:Ecoskim@gmail.com">Ecoskim@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+51914573660">+51 914 573 660</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ecoskim. Todos los derechos reservados.</p>
+            <p>Diseñado por Adriana Jaramillo Bravo</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/nosotros.js"></script>
+</body>
+</html>
