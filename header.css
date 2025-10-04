@@ -1,0 +1,24 @@
+/* Header shared styles for Ecoskim - keeps header consistent across pages */
+:root {
+    --primary-color: #4a6741;
+    --white: #ffffff;
+}
+.main-header {
+    background: transparent;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.main-header.scrolled { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.header-content { display:flex; align-items:center; justify-content:space-between; }
+.logo { display:inline-flex; align-items:center; text-decoration:none; color:var(--white); font-weight:700; z-index:1001; }
+.logo-wrap { display:inline-block; width:72px; height:72px; border-radius:50%; overflow:hidden; background:transparent; }
+.logo-img { width:110%; height:110%; object-fit:cover; display:block; transform:translate(-5%,-5%); transition: transform 0.15s ease; }
+.logo-wrap:hover .logo-img { transform: translate(-5%,-5%) scale(1.02); }
+.main-nav { display:flex; gap:1rem; }
+.main-nav a { color:var(--white); text-decoration:none; font-weight:500; margin:0 1rem; }
+.header-icons a { color:var(--white); font-size:1.2rem; margin-left:1.5rem; }
+@media (max-width:900px) { .logo-wrap { width:56px; height:56px; } }

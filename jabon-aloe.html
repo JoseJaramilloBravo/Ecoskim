@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabón de Aloe Vera - Ecoskim</title>
+    <!-- Iconos y Fuentes Mejoradas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/jabon-aloe.css">
+    <link rel="stylesheet" href="style/header.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">Ecoskim</a>
+            <nav class="main-nav" id="main-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../nosotros.html">Nosotros</a>
+                <a href="../productos.html">Productos</a>
+                <a href="../proceso.html">Proceso</a>
+                <a href="../beneficios.html">Beneficios</a>
+                <a href="../contacto.html">Contacto</a>
+            </nav>
+            <div class="header-icons" id="header-icons">
+                <a href="#" class="search-btn-icon" aria-label="Buscar"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-btn-icon" aria-label="Carrito de compras"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir/Cerrar menú">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Galería de Producto -->
+                <div class="product-gallery">
+                    <img src="../img/jabon de aloe vera 01.png" alt="Jabón de Aloe Vera - Vista Principal" class="main-product-image" id="main-product-image">
+                    <div class="thumbnail-container">
+                        <img src="../img/jabon de aloe vera 01.png" alt="Miniatura 1" class="thumbnail-image active">
+                        <img src="../img/jabon de aloe vera 02.png" alt="Miniatura 2" class="thumbnail-image">
+                        <img src="../img/jabon de aloe vera 03.png" alt="Miniatura 3" class="thumbnail-image">
+                        <img src="../img/jabon de aloe vera 04.png" alt="Miniatura 4" class="thumbnail-image">
+                    </div>
+                </div>
+
+                <!-- Información de Producto -->
+                <div class="product-info-details">
+                    <h1 class="product-title">Jabón de Aloe Vera</h1>
+                    <p class="product-price">S/. 8.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5 - 42 reseñas)</span>
+                    </div>
+                    <p class="product-description">
+                        Una ola de hidratación profunda y regeneración para tu piel. Nuestro jabón artesanal de aloe vera es un tesoro de la naturaleza, perfecto para calmar, suavizar y rejuvenecer todo tipo de pieles, especialmente las más sensibles.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Cantidad:</label>
+                        <div class="quantity-selector">
+                            <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="20">
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button" id="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i> Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pestañas de Información Adicional -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="descripcion">Descripción</button>
+                    <button class="tab-button" data-tab="ingredientes">Ingredientes</button>
+                    <button class="tab-button" data-tab="reseñas">Reseñas</button>
+                </div>
+
+                <div id="descripcion" class="tab-content active">
+                    <h3>El Secreto de una Piel Radiante</h3>
+                    <p>Elaborado con gel puro de aloe vera orgánico, este jabón es un concentrado de bienestar. Es conocido por sus extraordinarias propiedades curativas y regenerativas, lo que lo convierte en el aliado perfecto contra la resequedad, irritaciones y el paso del tiempo. Su espuma cremosa limpia con delicadeza sin eliminar los aceites naturales de la piel, dejándola fresca, equilibrada y visiblemente más saludable.</p>
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Beneficios Clave:</h4>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-leaf"></i>Hidrata y nutre profundamente la piel.</li>
+                        <li><i class="fas fa-leaf"></i>Promueve la cicatrización natural.</li>
+                        <li><i class="fas fa-leaf"></i>Calma irritaciones y quemaduras solares.</li>
+                        <li><i class="fas fa-leaf"></i>Rico en vitaminas y antioxidantes.</li>
+                        <li><i class="fas fa-leaf"></i>Posee efecto antiinflamatorio natural.</li>
+                        <li><i class="fas fa-leaf"></i>Ideal para después de la exposición al sol.</li>
+                    </ul>
+                </div>
+
+                <div id="ingredientes" class="tab-content">
+                    <h3>Fórmula Pura y Natural</h3>
+                    <p>Creemos en la transparencia y en el poder de los ingredientes simples y de alta calidad.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-leaf"></i><strong>Aceites Saponificados:</strong> Aceite de Oliva Virgen Extra, Aceite de Coco Orgánico, Manteca de Karité.</li>
+                        <li><i class="fas fa-leaf"></i><strong>Ingrediente Estrella:</strong> Gel de Aloe Vera Orgánico (40%).</li>
+                        <li><i class="fas fa-leaf"></i><strong>Aromas y Propiedades:</strong> Aceite Esencial de Menta y Árbol de Té.</li>
+                        <li><i class="fas fa-leaf"></i><strong>Extras Nutritivos:</strong> Vitamina E.</li>
+                    </ul>
+                </div>
+
+                <div id="reseñas" class="tab-content">
+                    <h3>Lo que dicen nuestros clientes</h3>
+                    <div class="review">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Este jabón es increíble para mi piel sensible. La hidratación dura todo el día y ha calmado mi rosácea. ¡Maravilloso!"</p>
+                        <p class="review-author">- María L.</p>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"He notado una gran mejoría en mi acné desde que empecé a usarlo. Limpia sin resecar. ¡100% recomendado!"</p>
+                        <p class="review-author">- Pedro S.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos Relacionados -->
+        <section class="recommend-section">
+            <h2 class="recommend-title">También Te Podría Gustar</h2>
+            <span class="recommend-underline"></span>
+            <div class="recommend-grid">
+                <div class="recommend-card">
+                    <img src="../img/jabon de carbon activado 01.png" alt="Jabón de Carbón Activado" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Carbón Activado</h3>
+                        <p class="recommend-desc">Limpieza profunda y control de grasa para pieles mixtas o con acné.</p>
+                        <div class="recommend-price">S/. 12.00</div>
+                        <a href="jabon-carbon.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="recommend-card">
+                    <img src="../img/jabon de avena 02.png" alt="Jabón de Avena" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Avena</h3>
+                        <p class="recommend-desc">Suavidad y alivio para pieles sensibles, ideal para uso diario.</p>
+                        <div class="recommend-price">S/. 8.00</div>
+                        <a href="jabon-avena.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="recommend-card">
+                    <img src="../img/jabon de manzanilla y miel 01.png" alt="Jabón de Manzanilla y Miel" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Manzanilla y Miel</h3>
+                        <p class="recommend-desc">Calma, hidrata y regenera, perfecto para piel delicada o irritada.</p>
+                        <div class="recommend-price">S/. 12.00</div>
+                        <a href="jabon-manzanilla.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal de Búsqueda -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre Ecoskim</h3>
+                    <p>Somos artesanos apasionados por crear jabones naturales que cuidan tu piel y el planeta. Cada producto es una promesa de pureza y calidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="../nosotros.html">Nosotros</a></li>
+                        <li><a href="../productos.html">Productos</a></li>
+                        <li><a href="../proceso.html">Proceso</a></li>
+                        <li><a href="../beneficios.html">Beneficios</a></li>
+                        <li><a href="../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Av. Famesa, Puente Piedra<br>Lima, Perú</p>
+                    <p>Email: <a href="mailto:Ecoskim@gmail.com">Ecoskim@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+51914573660">+51 914 573 660</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ecoskim. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Búsqueda -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSearch">×</span>
+            <h2><i class="fas fa-search"></i> Buscar Productos</h2>
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar jabones..." required>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+            <div class="search-results" id="searchResults">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">×</span>
+            <h2><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <h3>Total: S/. <span id="totalAmount">0.00</span></h3>
+                <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/jabon-aloe.js"></script>
+</body>
+</html>

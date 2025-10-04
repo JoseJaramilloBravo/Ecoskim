@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabón de Avena - Ecoskim</title>
+    <!-- Iconos y Fuentes Mejoradas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/jabon-avena.css">
+    <link rel="stylesheet" href="style/header.css">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">Ecoskim</a>
+            <nav class="main-nav" id="main-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../nosotros.html">Nosotros</a>
+                <a href="../productos.html">Productos</a>
+                <a href="../proceso.html">Proceso</a>
+                <a href="../beneficios.html">Beneficios</a>
+                <a href="../contactos.html">Contacto</a>
+            </nav>
+            <div class="header-icons" id="header-icons">
+                <a href="#" class="search-btn-icon" aria-label="Buscar"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-btn-icon" aria-label="Carrito de compras"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir/Cerrar menú">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Galería de Producto -->
+                <div class="product-gallery">
+                    <img src="../img/jabon de avena 01.png" alt="Jabón de Avena - Vista Principal" class="main-product-image" id="main-product-image">
+                    <div class="thumbnail-container">
+                        <img src="../img/jabon de avena 01.png" alt="Miniatura 1" class="thumbnail-image active">
+                        <img src="../img/jabon de avena 02.png" alt="Miniatura 2" class="thumbnail-image">
+                        <img src="../img/jabon de avena 03.png" alt="Miniatura 3" class="thumbnail-image">
+                        <img src="../img/jabon de avena 04.png" alt="Miniatura 4" class="thumbnail-image">
+                    </div>
+                </div>
+
+                <!-- Información de Producto -->
+                <div class="product-info-details">
+                    <h1 class="product-title">Jabón de Avena</h1>
+                    <p class="product-price">S/. 8.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(5/5 - 38 reseñas)</span>
+                    </div>
+                    <p class="product-description">
+                        Suavidad y nutrición natural para tu piel. Nuestro jabón artesanal de avena combina las propiedades exfoliantes y calmantes de este cereal con ingredientes naturales selectos, ideal para pieles sensibles y perfecto para una limpieza profunda pero gentil.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Cantidad:</label>
+                        <div class="quantity-selector">
+                            <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="20">
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button" id="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i> Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pestañas de Información Adicional -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="descripcion">Descripción</button>
+                    <button class="tab-button" data-tab="ingredientes">Ingredientes</button>
+                    <button class="tab-button" data-tab="reseñas">Reseñas</button>
+                </div>
+
+                <div id="descripcion" class="tab-content active">
+                    <h3>El Poder Nutritivo de la Avena</h3>
+                    <p>Nuestro jabón de avena es un tesoro de la naturaleza que combina las propiedades exfoliantes y calmantes de este cereal con ingredientes naturales selectos. La avena es conocida por su capacidad de calmar la piel irritada mientras elimina suavemente las células muertas, dejando tu piel suave, nutrida y visiblemente más saludable.</p>
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Beneficios Clave:</h4>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-leaf"></i>Exfoliación natural y suave de la piel.</li>
+                        <li><i class="fas fa-leaf"></i>Calma irritaciones y picazón.</li>
+                        <li><i class="fas fa-leaf"></i>Hidrata y nutre profundamente.</li>
+                        <li><i class="fas fa-leaf"></i>Ideal para pieles sensibles y secas.</li>
+                        <li><i class="fas fa-leaf"></i>Ayuda a mantener la barrera cutánea.</li>
+                        <li><i class="fas fa-leaf"></i>Perfecto para uso diario.</li>
+                    </ul>
+                </div>
+
+                <div id="ingredientes" class="tab-content">
+                    <h3>Fórmula Pura y Natural</h3>
+                    <p>Creemos en la transparencia y en el poder de los ingredientes simples y de alta calidad.</p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-leaf"></i><strong>Aceites Saponificados:</strong> Aceite de Oliva Virgen Extra, Aceite de Coco Orgánico, Manteca de Karité.</li>
+                        <li><i class="fas fa-leaf"></i><strong>Ingrediente Estrella:</strong> Avena Orgánica Molida (25%).</li>
+                        <li><i class="fas fa-leaf"></i><strong>Aromas y Propiedades:</strong> Aceite Esencial de Lavanda.</li>
+                        <li><i class="fas fa-leaf"></i><strong>Extras Nutritivos:</strong> Vitamina E y Miel Orgánica.</li>
+                    </ul>
+                </div>
+
+                <div id="reseñas" class="tab-content">
+                    <h3>Lo que dicen nuestros clientes</h3>
+                    <div class="review">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfecto para mi piel sensible. La exfoliación es suave y la hidratación dura todo el día. ¡Me encanta!"</p>
+                        <p class="review-author">- Ana M.</p>
+                    </div>
+                    <div class="review">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"He notado una gran mejoría en la textura de mi piel. Es suave y no irrita. ¡Excelente producto!"</p>
+                        <p class="review-author">- Carlos R.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos Relacionados -->
+        <section class="recommend-section">
+            <h2 class="recommend-title">También Te Podría Gustar</h2>
+            <span class="recommend-underline"></span>
+            <div class="recommend-grid">
+                <div class="recommend-card">
+                    <img src="../img/jabon de aloe vera 01.png" alt="Jabón de Aloe Vera" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Aloe Vera</h3>
+                        <p class="recommend-desc">Hidratación profunda y regeneración para todo tipo de pieles.</p>
+                        <div class="recommend-price">S/. 8.00</div>
+                        <a href="jabon-aloe.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="recommend-card">
+                    <img src="../img/jabon de carbon activado 01.png" alt="Jabón de Carbón Activado" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Carbón Activado</h3>
+                        <p class="recommend-desc">Limpieza profunda y control de grasa para pieles mixtas o con acné.</p>
+                        <div class="recommend-price">S/. 12.00</div>
+                        <a href="jabon-carbon.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="recommend-card">
+                    <img src="../img/jabon de manzanilla y miel 01.png" alt="Jabón de Manzanilla y Miel" class="recommend-img">
+                    <div class="recommend-info">
+                        <h3>Jabón de Manzanilla y Miel</h3>
+                        <p class="recommend-desc">Calma, hidrata y regenera, perfecto para piel delicada o irritada.</p>
+                        <div class="recommend-price">S/. 12.00</div>
+                        <a href="jabon-manzanilla.html" class="recommend-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre Ecoskim</h3>
+                    <p>Somos artesanos apasionados por crear jabones naturales que cuidan tu piel y el planeta. Cada producto es una promesa de pureza y calidad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="../nosotros.html">Nosotros</a></li>
+                        <li><a href="../productos.html">Productos</a></li>
+                        <li><a href="../proceso.html">Proceso</a></li>
+                        <li><a href="../beneficios.html">Beneficios</a></li>
+                        <li><a href="../contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p>Av. Famesa, Puente Piedra<br>Lima, Perú</p>
+                    <p>Email: <a href="mailto:Ecoskim@gmail.com">Ecoskim@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+51914573660">+51 914 573 660</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ecoskim. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Búsqueda -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSearch">×</span>
+            <h2><i class="fas fa-search"></i> Buscar Productos</h2>
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar jabones..." required>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCart">×</span>
+            <h2><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <h3>Total: S/. <span id="totalAmount">0.00</span></h3>
+                <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/jabon-avena.js"></script>
+</body>
+</html>
